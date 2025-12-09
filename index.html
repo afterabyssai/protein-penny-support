@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Account - Protein Penny</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            max-width: 600px; 
+            margin: 50px auto; 
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 { color: #2c5f7c; }
+        h2 { color: #333; margin-top: 30px; }
+        .important { 
+            background: #fff3cd;
+            border-left: 4px solid #d9534f;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .email-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Account Deletion - Protein Penny</h1>
+    
+    <h2>How to Delete Your Account</h2>
+    <p>To request deletion of your Protein Penny account and all associated data:</p>
+    
+    <div class="email-box">
+        <strong>Email:</strong> support@afterabyss.com<br>
+        <strong>Subject:</strong> Delete My Account - Protein Penny<br>
+        <strong>Include:</strong> Your registered email address
+    </div>
+    
+    <h2>What Gets Deleted</h2>
+    <ul>
+        <li>Your user account and profile settings</li>
+        <li>All daily food logs</li>
+        <li>Custom foods you created</li>
+        <li>Saved favorites</li>
+        <li>All personal preferences and data</li>
+    </ul>
+    
+    <h2>Timeline</h2>
+    <p>Account deletions are processed within 30 days of your request.</p>
+    
+    <div class="important">
+        <strong>Important:</strong> This action is permanent and cannot be undone. All your data will be permanently removed from our servers.
+    </div>
+</body>
+</html>
+```
+
+10. Click "Commit changes"
+11. Go to Settings → Pages (left sidebar)
+12. Under "Source" select "Deploy from a branch"
+13. Select "main" branch
+14. Click "Save"
+15. Wait 2-3 minutes, then visit: `https://[your-username].github.io/protein-penny-support/`
+
+**Save that URL** - that's what you'll give to Nikunj and put in Google Play Console.
+
+---
+
+## Step 2: Figma Make Prompt (Do This After)
+
+Once GitHub page is live, use this prompt in Figma Make:
+```
+Add a delete account feature to the Profile Settings screen:
+
+1. At the bottom of the Profile Settings screen (below the Save button), add a red text link that says "Delete Account"
+
+2. When clicked, show a confirmation dialog with:
+   - Title: "Delete Account?"
+   - Message: "This will permanently delete all your data including your food logs, custom foods, favorites, and settings. This cannot be undone."
+   - Two buttons: "Cancel" (gray) and "Delete My Account" (red)
+
+3. When "Delete My Account" is clicked, trigger a deleteAccount() function (the developer will implement the API call)
+
+Style the delete button in red (#d9534f) to indicate it's a destructive action.
