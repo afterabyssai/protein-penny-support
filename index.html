@@ -58,30 +58,4 @@
 </html>
 ```
 
-10. Click "Commit changes"
-11. Go to Settings → Pages (left sidebar)
-12. Under "Source" select "Deploy from a branch"
-13. Select "main" branch
-14. Click "Save"
-15. Wait 2-3 minutes, then visit: `https://[your-username].github.io/protein-penny-support/`
 
-**Save that URL** - that's what you'll give to Nikunj and put in Google Play Console.
-
----
-
-## Step 2: Figma Make Prompt (Do This After)
-
-Once GitHub page is live, use this prompt in Figma Make:
-```
-Add a delete account feature to the Profile Settings screen:
-
-1. At the bottom of the Profile Settings screen (below the Save button), add a red text link that says "Delete Account"
-
-2. When clicked, show a confirmation dialog with:
-   - Title: "Delete Account?"
-   - Message: "This will permanently delete all your data including your food logs, custom foods, favorites, and settings. This cannot be undone."
-   - Two buttons: "Cancel" (gray) and "Delete My Account" (red)
-
-3. When "Delete My Account" is clicked, trigger a deleteAccount() function (the developer will implement the API call)
-
-Style the delete button in red (#d9534f) to indicate it's a destructive action.
